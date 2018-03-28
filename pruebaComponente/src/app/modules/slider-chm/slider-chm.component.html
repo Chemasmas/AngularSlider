@@ -1,14 +1,14 @@
 <div id="imagen">
   <ul>
-    <li *ngFor="let imagen of imagenes" class="vPrev">
+    <li *ngFor="let imagen of imagenes index as i" class="vPrev {{i==selected? 'visible' : 'no-visible'}}">
       <img src="{{imagen}}" alt="">
     </li>
   </ul>
 </div>
 <div id="galeria">
   <ul>
-    <li *ngFor="let imagen of imagenes" >
-      <img src="{{imagen}}" alt="">
+    <li *ngFor="let imagen of imagenes index as i" class="{{i==selected? 'selected' : ''}}">
+      <img src="{{imagen}}" alt="" (click)="selected = i" >
     </li>
   </ul>
 </div>

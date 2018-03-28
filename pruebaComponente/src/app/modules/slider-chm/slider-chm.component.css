@@ -1,9 +1,38 @@
-.vPrev{
-    max-height: 100px;
-    max-width: 100px;
+.vPrev>img{
+    height: 200px;
+    width: auto;
 }
 
-.vPrev>img{
-    height: 100px;
-    width: 100px;
+#galeria>ul{
+    list-style-type: none;
+}
+#galeria>ul>li>img{
+    height: 100%;
+    
+}
+#galeria>ul>li{
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 90px;
+    overflow: hidden;
+}
+
+#galeria>ul>li>img{
+    border: 0px solid #000000;
+}
+
+.visible{
+    display: inline;
+
+}
+
+.no-visible{
+    display: none;
+}
+
+.selected{
+    border: 2px solid #000000;
 }
