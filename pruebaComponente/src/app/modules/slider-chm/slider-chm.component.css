@@ -1,0 +1,9 @@
+.vPrev{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.vPrev>img{
+    height: 100px;
+    width: 100px;
+}
