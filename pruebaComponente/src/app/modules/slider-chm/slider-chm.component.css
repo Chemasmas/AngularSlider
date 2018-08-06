@@ -2,26 +2,23 @@
     height: 200px;
     width: auto;
 }
-
-#galeria>ul{
-    list-style-type: none;
+#galeria>span>img{
+    height: 100%;    
 }
-#galeria>ul>li>img{
-    height: 100%;
-    
-}
-#galeria>ul>li{
+#galeria>span{
     margin-left: 5px;
     margin-right: 5px;
-    float: left;
-    position: relative;
-    width: 50px;
+    max-width: 50px;
+    width: 25%;
     height: 90px;
     overflow: hidden;
+    white-space: normal;
+    display: inline-block;
 }
 
-#galeria>ul>li>img{
-    border: 0px solid #000000;
+#galeria{
+    white-space: nowrap;
+    height: 100px;
 }
 
 .visible{
@@ -35,4 +32,29 @@
 
 .selected{
     border: 2px solid #000000;
+}
+
+#imagen,#galeria{
+    width: 100%;
+}
+
+
+
+.no-visible2 {
+    transition:All 1s linear;
+    -webkit-transition:All 1s linear;
+    -moz-transition:All 1s linear;
+    -o-transition:All 1s linear;
+    transform: rotate(0deg) scale(0.802) skew(1deg) translate(-300px);
+    -webkit-transform: rotate(0deg) scale(0.802) skew(1deg) translate(-300px);
+    -moz-transform: rotate(0deg) scale(0.802) skew(1deg) translate(-300px);
+    -o-transform: rotate(0deg) scale(0.802) skew(1deg) translate(-300px);
+    -ms-transform: rotate(0deg) scale(0.802) skew(1deg) translate(-300px);
+}
+.classname:hover{
+    transform: rotate(0deg) scale(0.802) skew(1deg) translate(19px);
+    -webkit-transform: rotate(0deg) scale(0.802) skew(1deg) translate(19px);
+    -moz-transform: rotate(0deg) scale(0.802) skew(1deg) translate(19px);
+    -o-transform: rotate(0deg) scale(0.802) skew(1deg) translate(19px);
+    -ms-transform: rotate(0deg) scale(0.802) skew(1deg) translate(19px);
 }
